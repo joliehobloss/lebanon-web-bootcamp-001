@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    
+<div id="main-body">  
+
+<section id="section1">
+    <h1 id="h1-section1">Todo List</h1>
+    <h3 id="h3-section1">Organize and Never forget todo things</h3>
+</section>    
+
+<section id="section2">
+<h3 id="today-date"></h3><hr>
+
+<form id="form-todo" autocomplete="off">
+    <input type="text" id="input-todo" placeholder="Enter your Task" required>
+    <input type="date" id="date-time" required>
+ <div id="flexbutten-container">
+    <input type="submit" id="todo-butten" value="Add Todo">
+    <select id="drop-list" required>
+      <option value="1">Priority 1</option>
+      <option value="2">Priority 2</option>
+      <option value="3">Priority 3</option>
+    </select>
+ </div>   
+</form>
+
+   <h1>Your tasks</h1>
+ <div id="main">
+   <h3 class='center' id="remove">Lucky you, you don't have any tasks</h3>
+   <ul id="list" style="list-style-type:none;">
+   </ul>
+</div> 
+</section>
+</div>  
+    <script src="script.js"></script>
+  </body>
+</html>
