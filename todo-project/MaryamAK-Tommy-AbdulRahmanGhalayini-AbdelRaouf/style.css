@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+ 
+  font-family: Lobster ;
+  height: 100vh;
+  background: url("https://jooinn.com/images/sky-view-8.jpg") no-repeat center center fixed;
+  background-size:         cover;                     
+
+}
+ul{
+  padding-left: 0;
+}
+ul > li
+{
+    list-style-type: none;
+}
+h1{
+  width: 180px;
+  height: 120px;
+  color: rgb(255,245,0);
+  border-radius: 50%; 
+  margin: 12px auto 10px auto;
+  box-shadow: 0px 0px 20px 10px rgba(255, 247, 0, 0.75);
+}
+h2{
+  margin-top: 5px;
+}
+#header, #myTodos,#date,#create-task-form{
+  text-align: center;
+}
+
+input {
+    border-radius: 10px;
+
+}
+/* #### where the tasks are shown #### */
+#list{  
+  background-color: rgba(240, 240, 67, 0.8);
+  border-radius: 1rem;
+  border: solid rgb(0, 140, 255);
+  margin: 20px auto;
+  padding: 5px;
+  width: 250px;
+  height: auto;
+  box-shadow: 0px 12px 14px 0px rgba(0,0,0,0.8);
+}
+
+/* ### selection ### */
+#priority{
+  font-family: Lobster ;
+  background-color: rgba(0, 140, 255, 0.6);
+  border: solid rgb(240, 240, 67);
+  border-radius: 1rem;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+.priority-1{
+color: red;
+}
+.priority-2{
+color: yellow;
+}
+.priority-3{
+color: green;
+}
+#priority:hover{
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+/* #### inputs #### */
+input[type = text] {
+  font-family: Lobster ;
+  background-color: rgba(0, 140, 255, 0.6);
+  border: solid rgb(240, 240, 67);
+  text-decoration: none;
+  color:  white;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+::placeholder {
+  color: white;
+}
+input[type = date] {
+  font-family: Lobster ;
+  background-color: rgba(0, 140, 255, 0.6);
+  border: solid rgb(240, 240, 67);
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+input[type = submit] {
+  font-family: Lobster ;
+  background-color: rgba(0, 140, 255, 0.6);
+  border: solid rgb(240, 240, 67);
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+
+input[type = text]:hover,
+input[type = date]:hover,
+input[type = submit]:hover,
+button:hover{
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+
+button {
+  font-family: Lobster ;
+  background-color: rgb(0, 140, 255);
+  border: none;
+  border-radius:20px; 
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 0 10px 40px;           
+}
+/* ##################### */
+span{
+  margin: 10px 2px;
+}
+
+.done {
+  text-decoration: line-through;
+} 
+
+/* ######################### */
+
+@media screen and (max-width:530px) {
+
+ body{
+   display: flex;
+   flex-direction: column;
+ }
+form{
+  display: flex;
+  flex-direction: column;
+  
+}
+input[type = submit]{
+  width: 80px;
+  margin: 10px auto;
+}
+ h1{
+  margin-top: 12px;
+  height:150px;
+ }
+div{
+  align-self: center;
+}
+ 
+}
+ 
