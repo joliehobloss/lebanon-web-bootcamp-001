@@ -33,13 +33,13 @@ function sweeper(arr){
       //if the element is a mine, i will replace it with 9 and check for neighbouring
       if(element === 1){
           output[i][j]=9;
-          points.map((point)=>{
+          points.forEach((point)=>{
              if(arr[i - point[0]])
                 if (arr [j - point[1]])
-					//testing for edge, if neighbour exist: 
-					if(arr[ i - point[0]] [j - point[1]] !=1 )
-						//if the neighbour is a mine dont add 1 
-						output[ i - point[0]] [j - point[1]] ++
+		//testing for edge, if neighbour exist: 
+		if(arr[ i - point[0]] [j - point[1]] !=1 )
+		//if the neighbour is a mine dont add 1 
+		output[ i - point[0]] [j - point[1]] ++
               })
       }
     })
