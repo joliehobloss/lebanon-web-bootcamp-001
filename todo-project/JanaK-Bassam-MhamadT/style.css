@@ -1,0 +1,84 @@
+body{
+background-color: #F5DEB3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#todo{
+  
+  width: 50%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #D2B48C;
+  padding: 20px;
+
+}
+
+input[type=text], input[type=date],select
+{
+  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #CD853F;
+  border-radius: 10px;
+  box-sizing: border-box;
+  }
+
+  input[type=submit] {
+  
+  width: 100%;
+  background-color: #CD853F;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.top{
+
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size: 30px;
+text-align: center;
+}
+
+
+#list{
+width: 50%;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+background-color: #FFDAB9;
+padding: 20px;
+border: 1px solid #CD853F;
+
+
+}
+
+.lilist{
+  border-radius: 25px;
+  color: white;
+background-color: #CD853F;
+ padding: 14px 20px;
+  margin: 8px 0px;
+
+}
+
+@media only screen and (max-width: 450px) {
+ #todo{
+  width: 100%;
+  }
+#list{
+  width: 100%;
+}  
+}
+
+.checked p {
+text-decoration: line-through;
+}
+.dead{
+background-color: rgb(134, 91, 48);;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 class="top">Today is </h1>
+    <center>
+    <form  id="todo">
+        <input type="date" id="deadline" name="Calendar" required><br>
+        <input type="text" id="todoinput" placeholder="Enter your todo" required>
+
+        <br>
+
+<select id="priority" >
+      <option value="0">High</option>
+      <option value="1">Medium</option>
+      <option value="2">Low</option>
+    </select>
+  
+
+        <br>
+        <input type="submit" value="add ToDo">
+    </form>   
+    <br>
+    <div id="list">
+    <p id="noTask">Lucky you, you have no task to do</p>
+    <ul id="listunorder">
+      
+    </ul>
+  
+    </div>
+    </center>
+    <script src="script.js"></script>
+  </body>
+</html>
