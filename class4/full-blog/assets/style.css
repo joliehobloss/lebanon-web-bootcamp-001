@@ -1,0 +1,25 @@
+#side{
+    position:fixed ;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    background-color:grey;
+    width:280px;
+    padding:20px;
+    text-align: right;
+}
+.container{
+    padding-left:350px;
+    padding-right: 20px;
+}
+p{
+    text-align: justify;
+
+}
+#verbal{
+    text-align: right;
+
+}
+.button{
+    text-align: right;
+}

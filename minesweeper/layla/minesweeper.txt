@@ -1,0 +1,40 @@
+const input = [
+  [0, 1, 0, 0],
+  [0, 0, 1, 0], 
+  [0, 1, 0, 1],
+  [1, 1, 0, 0],
+];
+
+const neighbors = [
+      [-1, -1],//top left 
+      [-1, 0],//top
+      [-1, 1],//top right 
+      [0, -1],//left
+      [0, 1],//right
+      [1, -1], //down left
+      [1, 0], //down
+      [1, 1]//down right 
+  ];
+
+minesweeper(input)
+
+function minesweeper(arr) {
+
+  const newArray = arr.map(el => {
+    return el.map(index => index === 1 ? 9 : index)
+  })
+  console.log(newArray);
+  for (let i = 0; i < newArray.length; i++) {
+  for (let j = 0; j < newArray[i].length; j++) {
+      if (newArray[i][j] !== 9) {
+
+    for (let k = 0; k < neighbors.length; k++) {
+       if (newArray[i+neighbors[k][0]] !== undefined){
+        if( newArray[i+neighbors[k][0]][j+neighbors[k][1]] === 9)
+            newArray[i][j]++;}
+   }
+   }
+  }
+  }
+  console.log(newArray);
+}
