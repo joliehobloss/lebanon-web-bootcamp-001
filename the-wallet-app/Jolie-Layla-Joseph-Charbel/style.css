@@ -1,0 +1,14 @@
+body {
+	background: url(Wallet.jpg);
+	font-family: sans-serif;
+}
+.expense {
+	color: red;
+}
+.income {
+	color: green;
+}
+
+.clickable {
+	cursor: pointer;
+}
